@@ -1,0 +1,4 @@
+include README
+include HISTORY
+recursive-include divioadmin/templates/ *
+recursive-include divioadmin/media/ *

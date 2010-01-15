@@ -13,3 +13,6 @@ build
 .project
 .pydevproject
 *~
+.hg
+.git
+.svn

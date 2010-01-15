@@ -1,0 +1,21 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{# this file contains divio customization for the admin site #}
+{# also: media/admin_divio/* #}
+
+{% block extrastyle %}
+{{ block.super }}
+{% load adminmedia %}
+<link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/dashboard.css" />
+<link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/base.css" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}divioadmin/admin.css" />
+{% endblock %}
+
+{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="/admin/">{% trans 'Django administration' %}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
