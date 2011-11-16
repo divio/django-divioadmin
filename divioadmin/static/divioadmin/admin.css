@@ -1,0 +1,7 @@
+#header,#branding h1,#branding h1 a{height:41px;}
+#header{background:#fff url(header.jpg) repeat-x 0px -45px;color:#656565;overflow:hidden;border-bottom:2px solid #DDDDDD;}
+#header a:link, #header a:visited{color:#656565;}
+#header a:hover{text-decoration:underline;}
+#branding h1{margin:0;padding:0;color:#656565;font-size:15px;line-height:40px;text-indent:10px;}
+#branding h1 a{display:block;background:url(header.jpg) no-repeat 0px 0px;text-indent:-7777px;width:115px;}
+#user-tools{position:absolute;top:0;right:0;padding:1.2em 10px;font-size:11px;text-align:right;}

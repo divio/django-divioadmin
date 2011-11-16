@@ -7,7 +7,7 @@ import os
 version = __import__(APP_NAME).__version__
 
 media_files = []
-for dir in ['%s/media' % APP_NAME,'%s/templates' % APP_NAME]:
+for dir in ['%s/media' % APP_NAME,'%s/templates' % APP_NAME,'%s/static' % APP_NAME]:
     for dirpath, dirnames, filenames in os.walk(dir):
         media_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
