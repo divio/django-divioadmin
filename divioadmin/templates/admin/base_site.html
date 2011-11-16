@@ -9,7 +9,11 @@
 {% load adminmedia %}
 <link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/dashboard.css" />
 <link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/base.css" />
+{% if STATIC_URL %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}divioadmin/admin.css" />
+{% else %}
 <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}divioadmin/admin.css" />
+{% endif %}
 {% endblock %}
 
 {% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
